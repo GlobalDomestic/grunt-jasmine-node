@@ -34,22 +34,7 @@ grunt.initConfig({
   },
 });
 ```
-      specFolders: this.filesSrc.map( function( filePath ) {
-        return path.join( cwd, filePath);
-      }),
-      isVerbose: false,
-      showColors: true,
-      teamcity: process.env.TEAMCITY_PROJECT_NAME || false,
-      useRequireJs: false,
-      regExpSpec: undefined,
-      junitreport: {
-        report: false,
-        savePath : './reports/',
-        useDotNotation: true,
-        consolidate: true
-      },
-      includeStackTrace: true,
-      growl: false,
+
 ### Options
 
 #### options.isVerbose
@@ -78,7 +63,7 @@ File run before specs to include and configure RequireJS.
 
 #### options.junitreport
 Type: `Object`
-Default value: Object
+Default value: `Object`
 ```js
 {
   report: false,
